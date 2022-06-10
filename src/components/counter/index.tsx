@@ -12,7 +12,7 @@ import { counterReducer, initialCounterState } from "./state";
 interface CounterProps {}
 
 const Counter: FC<CounterProps> = () => {
-  const [counter, setCounter] = useState<any>("r");
+  const [counter, setCounter] = useState<any>(2);
   const [isEvenCounter, setIsEvenCounter] = useState(false);
 
   const counterRef = useRef(0);
@@ -87,7 +87,7 @@ const Counter: FC<CounterProps> = () => {
         {isNumber(counter) && (
           <div>
             <RandomButton
-              square={setCounter}
+              random={setCounter}
               counter={counter}
               counterRef={counterRef}
             />

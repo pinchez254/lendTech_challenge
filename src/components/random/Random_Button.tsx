@@ -1,18 +1,20 @@
 import React, { FC } from "react";
+import { getRandomValueFromFile } from "../../utils";
+
 interface Props {
-  square: (x: number) => void;
+  random: (x: any) => void;
   counter: number;
   counterRef: any;
 }
-const RandomButton: FC<Props> = ({ square, counter, counterRef }) => {
-  //must square the counter (sqrt(2^3) for example)
-  const handleSquare = () => {
-    square(Math.sqrt(counter));
-    counterRef.current += 1;
+const RandomButton: FC<Props> = ({ random, counter, counterRef }) => {
+  const generateRandom = async () => {
+    random(
+      await getRandomValueFromFile(process.env.PUBLIC_URL + "/cereal.csv")
+    );
   };
 
   return (
-    <button onClick={handleSquare} className="control__btn">
+    <button onClick={generateRandom} className="control__btn">
       Generate Random Number
     </button>
   );
