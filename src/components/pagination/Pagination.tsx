@@ -46,13 +46,6 @@ const Pagination: FC<PaginationProps> = ({ counterState, counterRef }) => {
     }
   };
 
-  console.log("---------------------------------------");
-  console.log("currentPage", currentPage);
-  console.log("maxPages", counterState);
-
-  console.log("useref.current", counterRef.current);
-
-  console.log("---------------------------------------");
   const paginationRender = (
     <div className="flex-container">
       <div>
