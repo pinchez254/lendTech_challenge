@@ -10,7 +10,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="counter">
           <h1>React/UX Tech Challenge Lendtech</h1>
-
           <Counter />
         </div>
       </header>
