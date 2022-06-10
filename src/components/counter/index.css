@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
+/* 
+conter container
+ */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 5px;
+  min-height: 20vh;
+  width: 100vw;
+}
+/* 
+green glow container styles
+ */
+.green__wrapper {
+  position: relative;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #00FF00;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  cursor: pointer;
+  display: inline-block;
+  background-color: #00FF00;
+  color: #212121;
+  box-shadow: 0 0 5px #00FF00, 0 0 25px #00FF00, 0 0 50px #00FF00,
+    0 0 200px #00FF00;
+}
+
+/* 
+purple glow container styles  
+ */
+
+ .purple__wrapper {
+  position: relative;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #FF00FF;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  cursor: pointer;
+  display: inline-block;
+  background-color: #FF00FF;
+  color: #212121;
+  box-shadow: 0 0 5px #FF00FF, 0 0 25px #FF00FF, 0 0 50px #FF00FF,
+    0 0 200px #FF00FF;
+ }
+
+
+ /*
+ red  glow container styles  
+ */
+.red__wrapper {
+  position: relative;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #FF0000;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  cursor: pointer;
+  display: inline-block;
+  background-color: #FF0000;
+  color: #212121;
+  box-shadow: 0 0 5px #FF0000, 0 0 25px #FF0000, 0 0 50px #FF0000,
+    0 0 200px #FF0000;
+}
+
+
+/* 
+green glow text styles  
+ */
+  .green__text {
+    color: #00FF00;
+    text-shadow:
+      0 0 5px #00FF00,
+      0 0 20px #00FF00,    
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+   
+  /* 
+  Purple glow text styles
+  */
+
+  .purple__text {
+    color: #FF00FF;
+    text-shadow:
+      0 0 5px #FF00FF,
+      0 0 20px #FF00FF,    
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+
+  /*
+  Red glow text styles
+  */
+  .red__text {
+    color: #FF0000;
+    text-shadow:
+      0 0 5px #FF0000,
+      0 0 20px #FF0000,    
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  }
+
+  form {
+    padding: 0 1.5em;
+  }
+  
+  .form-item {
+    margin-bottom: 0.75em;
+    width: 100%;
+  }
+  
+  .form-item input {
+    background: #fafafa;
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    height: 50px;
+    transition: border-color 0.3s;
+    width: 100%;
+  }
+  
+  .form-item input:focus {
+    border-bottom: 2px solid #c0c0c0;
+    outline: none;
+  }
